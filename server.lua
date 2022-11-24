@@ -1,4 +1,4 @@
--- github.com/cleoppa
+-- github.com/cleoppa & github.com/desterofficial
 -- "SilahTürü" = { silahID, Mermi Miktarı, Fiyat}
 local silahTurleri = {
 	["pistol"]	= { 22, 17, 425 },
@@ -116,7 +116,7 @@ function mermiIptal(thePlayer, cmd)
 		setElementData(thePlayer, "mermi:tutar", false)
 		setElementData(thePlayer, "mermi:sarjorMiktari", false)
 		setElementData(thePlayer, "mermi:silahTuru", false)
-		outputChatBox(">> #ffffffSatışı başarıyla iptal ettiniz!", thePlayer, 0, 255, 0, true)
+		outputChatBox(">> #ffffffMermi alma işlemini iptal ettiniz, tekrar almak istiyorsanız. /mermial", thePlayer, 0, 255, 0, true)
 	end
 end
 addCommandHandler("mermiiptal", mermiIptal)
